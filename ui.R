@@ -131,7 +131,7 @@ body <- dashboardBody(
           tabBox(
             width = 12,
             selectInput("grafica_id", "Seleccione la estadistica a visualizar",
-                        choices = c("Resumen-estadistico-especiess","Resumen-Estadistico-peso", "Resumen-Estadistico-sexo")),
+                        choices = c("Resumen-estadistico-especies","Resumen-Estadistico-peso", "Resumen-Estadistico-sexo")),
             hr(),
             tabsetPanel(
               id="params",

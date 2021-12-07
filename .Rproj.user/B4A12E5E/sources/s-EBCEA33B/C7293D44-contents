@@ -153,7 +153,7 @@ server <- function(input, output, session) {
   
   sample_plot <- reactive({
     switch (input$grafica_id,
-            "Resumen-estadistico-especiess" = datos_filtrados() %>% dplyr::select("Parametro" = species) ,
+            "Resumen-estadistico-especies" = datos_filtrados() %>% dplyr::select("Parametro" = species) ,
             "Resumen-Estadistico-peso" = datos_filtrados() %>% dplyr::select("Parametro" =weight) ,
             "Resumen-Estadistico-sexo" = datos_filtrados() %>% dplyr::select("Parametro" = sex)
     )
